@@ -1,0 +1,128 @@
+/* Aplicando cores ao corpo e cabeçalhos */
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    color: #003366;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    color: #006400;
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Estilo da barra lateral */
+  aside {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 25%;
+    float: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside h2 {
+    color: #003366;
+    font-size: 1.6em;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+  }
+  
+  aside p {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  
+  
+  /* Destaques e botões */
+  .highlight {
+    color: #FFD700;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #006400;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  .btn:hover {
+    background-color: #004d00;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  aside {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    aside {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    main {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    aside h2, main h2 {
+      font-size: 1.5em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  }
+  img {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+  }
+  
